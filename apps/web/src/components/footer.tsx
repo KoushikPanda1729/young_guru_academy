@@ -1,11 +1,17 @@
 "use client";
 
-import { FaInstagram, FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookSquare,
+  FaWhatsapp,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
 import Logo from "./logo";
 import Image from "next/image";
+import { AppStoreDialog } from "./app-store-dialog";
 
 const data = {
   facebookLink:
@@ -29,7 +35,9 @@ const data = {
   },
 
   contact: {
-    email: "info@bunnieducation.com",
+    address: "D-494, G/F, West Vinod Nagar, Mandawali, Delhi - 92",
+    phone: "+91 9560998990",
+    email: "Info@youngguruacademy.com",
     whatsapp: "+91 95609 98990",
   },
 
@@ -38,13 +46,18 @@ const data = {
   },
 
   stores: {
-    playStore:
-      "https://play.google.com/store/apps/details?id=com.app.talk2partners",
+    playStore: "https://play.google.com/store/apps/details?id=co.classplus.yga",
     appStore: "#",
   },
 };
 
 const contactInfo = [
+  {
+    icon: FaMapMarkerAlt,
+    label: "Address",
+    text: data.contact.address,
+    link: `https://maps.google.com/?q=${encodeURIComponent(data.contact.address)}`,
+  },
   {
     icon: IoMdMail,
     label: "Email",
@@ -81,19 +94,22 @@ const supportLinks = [
 
 export default function FooterSection() {
   return (
-    <footer className="mt-16 w-full place-self-end rounded-t-xl bg-secondary dark:bg-secondary/20">
+    <footer id="contact" className="mt-16 w-full place-self-end rounded-t-xl bg-secondary dark:bg-secondary/20">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Left Section: Logo & Store Links */}
           <div>
             <div className="flex flex-col gap-4 text-primary sm:items-start items-center">
-              <Logo />
+              <div className="flex items-center gap-3">
+                <Logo />
+                <span className="text-xl font-semibold">Young Guru Academy<sup className="text-xs">®</sup></span>
+              </div>
               <p className="text-muted-foreground text-sm text-center sm:text-left">
                 Managed by Bunni Education Service Pvt Ltd
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="https://play.google.com/store/apps/details?id=com.app.talk2partners"
+                  href="https://play.google.com/store/apps/details?id=co.classplus.yga"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -106,7 +122,7 @@ export default function FooterSection() {
                   />
                 </Link>
 
-                <Link href="#" target="_blank" rel="noopener noreferrer">
+                <AppStoreDialog>
                   <Image
                     src="/badges/app-store-badge.svg"
                     alt="Download on the App Store"
@@ -114,7 +130,7 @@ export default function FooterSection() {
                     height={47}
                     className="h-12 w-auto"
                   />
-                </Link>
+                </AppStoreDialog>
               </div>
             </div>
           </div>

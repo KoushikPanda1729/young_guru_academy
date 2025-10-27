@@ -73,7 +73,7 @@ Yeh Course bahut hi Easy Language me Prepare kiya gaya hai.
 
   const handleEnroll = () => {
     router.push(
-      "https://play.google.com/store/apps/details?id=com.app.talk2partners"
+      "https://play.google.com/store/apps/details?id=co.classplus.yga"
     );
     setOpen(false);
   };
@@ -211,7 +211,7 @@ Yeh Course bahut hi Easy Language me Prepare kiya gaya hai.
 
                   <Button
                     size="lg"
-                    className="w-full bg-primary hover:bg-primary-foreground text-white font-semibold shadow-lg text-sm md:text-base h-10 md:h-12"
+                    className="w-full bg-primary hover:bg-primary-foreground text-white hover:text-black font-semibold shadow-lg text-sm md:text-base h-10 md:h-12"
                     onClick={handleEnroll}
                   >
                     <PlayCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />

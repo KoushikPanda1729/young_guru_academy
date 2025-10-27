@@ -15,7 +15,7 @@ export default function PhoneWithOverlayUI({
     <div className="relative flex items-center justify-center px-4">
       {/* Floating card - Join Course */}
       <div className="absolute z-15 left-0 top-[20%] bg-white rounded-xl shadow-xl p-4 w-[200px]">
-        <h3 className="text-lg font-semibold text-blue-600">Join Course</h3>
+        <h3 className="text-lg font-semibold text-primary">Join Course</h3>
         <p className="text-sm text-gray-600">Learn with Expert Trainers</p>
         <div className="flex mt-3 space-x-2">
           <AvatarCollections />
@@ -27,7 +27,7 @@ export default function PhoneWithOverlayUI({
         <p className="text-sm text-gray-700 mb-2">
           Choose Group or Personal Batch for flexible learning
         </p>
-        <button className="w-full bg-blue-600 text-white text-sm px-3 py-1.5 rounded-md hover:bg-blue-700 transition">
+        <button className="w-full bg-primary text-white text-sm px-3 py-1.5 rounded-md hover:bg-blue-700 transition">
           Book Free Demo
         </button>
       </div>

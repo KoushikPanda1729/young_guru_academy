@@ -12,7 +12,7 @@ export default function AboutUsSection() {
   const aboutData = {
     title: "About Us",
     subtitle:
-      "Young Guru Academy is a premier online learning platform managed by Bunni Education Service Pvt. Ltd. For over a decade, we have empowered more than 50,000 students through comprehensive online courses in Spoken English, Interview Preparation, and Soft Skills Training. We offer flexible learning options with both Group and Personal batches to suit every learner's needs.",
+      "Young Guru Academy is an online and offline Institute for Learning English Spoken, Personality Development, Interview Preparation, Career Counselling, and other Career and Educational skills in west Vinod nagar, Delhi. Young Guru Academy has been Teaching since 2015 & Trained more than 1.5 Lakhs Students Across the Country. We have developed an environment where you must Learn English & Improve Yourself. We provide spoken classes from Zero to intermediate or advanced level to nurture the students from the level they want to pursue. So Join Now Our Course to fulfill your Dreams.",
     mission:
       "To provide accessible, high-quality skill development courses that empower students, professionals, and homemakers to achieve their personal and career goals through expert guidance and flexible learning options.",
     vision:
@@ -133,10 +133,10 @@ export default function AboutUsSection() {
                 className="from-transparent via-blue-500/40 to-transparent"
                 reverse
               />
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 backdrop-blur-sm">
-                <Target className="h-8 w-8 text-blue-500" />
+              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm">
+                <Target className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-4 bg-gradient-to-r from-blue-500/90 to-blue-500/70 bg-clip-text text-3xl font-bold text-transparent">
+              <h3 className="mb-4 bg-gradient-to-r from-primary/90 to-primary/70 bg-clip-text text-3xl font-bold text-transparent">
                 Our Vision
               </h3>
               <p className="text-lg leading-relaxed text-muted-foreground">

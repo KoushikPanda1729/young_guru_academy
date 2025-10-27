@@ -24,7 +24,6 @@ export default function Navbar() {
       { href: "#courses", label: "Courses" },
       { href: "#about", label: "About us" },
       { href: "#contact", label: "Contact Us" },
-      { href: "#privacy", label: "Privacy policy & Terms of service" },
     ],
     []
   );

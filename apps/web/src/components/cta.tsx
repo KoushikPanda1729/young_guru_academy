@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlayCircle } from "lucide-react";
+import { AppStoreDialog } from "./app-store-dialog";
 
 export function CtaSection() {
   const offerPrice = 9;
@@ -25,11 +26,11 @@ export function CtaSection() {
         {/* Left Content */}
         <div className="space-y-6 text-left">
           <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-            App Launch Offer – Spoken English Course
+            Offer – Spoken English Course
           </h2>
           <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-lg">
-            Join <strong>Talk2Partners&trade;</strong> and get expert-led
-            courses, daily speaking challenges, live chat & audio call practice.
+            Join <strong>Young Guru Academy&trade;</strong> and get expert-led
+            courses.
           </p>
 
           {/* Offer Price */}
@@ -47,7 +48,7 @@ export function CtaSection() {
 
           {/* Enroll Button */}
           <Link
-            href="https://play.google.com/store/apps/details?id=com.app.talk2partners"
+            href="https://play.google.com/store/apps/details?id=co.classplus.yga"
             className="inline-flex items-center gap-2 bg-white text-primary font-semibold px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition-transform"
           >
             <PlayCircle className="w-5 h-5" /> Enroll Now – ₹9 🎉
@@ -56,7 +57,7 @@ export function CtaSection() {
           {/* Store Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <Link
-              href="https://play.google.com/store/apps/details?id=com.app.talk2partners"
+              href="https://play.google.com/store/apps/details?id=co.classplus.yga"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,7 +70,7 @@ export function CtaSection() {
               />
             </Link>
 
-            <Link href="#" target="_blank" rel="noopener noreferrer">
+            <AppStoreDialog>
               <Image
                 src="/badges/app-store-badge.svg"
                 alt="Download on the App Store"
@@ -77,7 +78,7 @@ export function CtaSection() {
                 height={47}
                 className="h-12 w-auto"
               />
-            </Link>
+            </AppStoreDialog>
           </div>
         </div>
 
@@ -89,7 +90,7 @@ export function CtaSection() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-10"></div>
                 <Image
                   src={"/images/phone.png"}
-                  alt="Talk2Partners app preview"
+                  alt="Young Guru Academy app preview"
                   fill
                   className="object-cover rounded-[2.5rem]"
                 />

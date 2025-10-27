@@ -11,53 +11,44 @@ import {
   MessageCircle,
   PlayCircle,
 } from "lucide-react";
-import PhoneMockup from "./ui/phone-mockup";
 import { brico } from "./fonts";
 
 const features = [
   {
     step: "Step 1",
-    title: "Join the Platform",
-    content: "Login or register to get started and track your progress.",
-    icon: <LogIn className="h-6 w-6 text-primary" />,
-    image: "/images/step1.png",
+    title: "Personal Trainer (One on One)",
+    content:
+      "Individual classes focused on your personal goals with fast improvement.",
+    icon: <Users className="h-6 w-6 text-primary" />,
+    thumbnail: "https://img.youtube.com/vi/sju21iJBuyE/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=sju21iJBuyE",
   },
   {
     step: "Step 2",
-    title: "Take Placement & Practice Tests",
-    content: "Evaluate your communication level and track improvements.",
-    icon: <ClipboardCheck className="h-6 w-6 text-primary" />,
-    image: "/images/step2.png",
+    title: "Group Trainer",
+    content:
+      "Classes of 15 students focused on similar goals with steady, gradual improvement.",
+    icon: <Users className="h-6 w-6 text-primary" />,
+    thumbnail: "https://img.youtube.com/vi/RspV9xg1T44/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=RspV9xg1T44",
   },
   {
     step: "Step 3",
-    title: "Find Practice Partners",
-    content: "Connect with other learners for real-time English conversations.",
-    icon: <Users className="h-6 w-6 text-primary" />,
-    image: "/images/phone.png",
+    title: "Recorded Lessons",
+    content:
+      "Access recorded lessons anytime, anywhere. Learn at your own pace with offline availability.",
+    icon: <PlayCircle className="h-6 w-6 text-primary" />,
+    thumbnail: "https://img.youtube.com/vi/y9K4QxX83sI/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=y9K4QxX83sI",
   },
   {
     step: "Step 4",
-    title: "Start Voice Calling",
-    content: "Engage in live audio conversations with human partners.",
-    icon: <Mic className="h-6 w-6 text-primary" />,
-    image: "/images/step4.png",
-  },
-  {
-    step: "Step 5",
-    title: "Give & Receive Feedback",
+    title: "Offline Learning",
     content:
-      "Get personalized feedback to improve fluency, clarity, and confidence.",
-    icon: <MessageCircle className="h-6 w-6 text-primary" />,
-    image: "/images/step5.png",
-  },
-  {
-    step: "Step 6",
-    title: "Watch Courses & Practice",
-    content:
-      "Unlock expert-led courses, learn at your own pace, and practice daily.",
-    icon: <PlayCircle className="h-6 w-6 text-primary" />,
-    image: "/images/step6.png",
+      "Download lessons and practice without internet connection. Learn on the go, anytime.",
+    icon: <ClipboardCheck className="h-6 w-6 text-primary" />,
+    thumbnail: "https://img.youtube.com/vi/Fixrdd0O6GI/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=Fixrdd0O6GI",
   },
 ];
 
@@ -177,22 +168,29 @@ export default function FeatureSections() {
             ))}
           </div>
 
-          {/* Right Side - PhoneMockup with image */}
+          {/* Right Side - Video Thumbnail Carousel */}
           <div className="relative w-full flex justify-center">
-            <PhoneMockup>
+            <div className="w-full max-w-2xl">
               <AnimatePresence mode="wait">
-                <motion.img
-                  key={features[currentFeature].image}
-                  src={features[currentFeature].image}
-                  alt={features[currentFeature].title}
-                  className="absolute inset-0 h-[580px] w-full object-contain"
+                <motion.a
+                  key={features[currentFeature].videoUrl}
+                  href={features[currentFeature].videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block w-full aspect-video rounded-xl overflow-hidden shadow-2xl group cursor-pointer"
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -100, opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
-                />
+                >
+                  <img
+                    src={features[currentFeature].thumbnail}
+                    alt={features[currentFeature].title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </motion.a>
               </AnimatePresence>
-            </PhoneMockup>
+            </div>
           </div>
         </div>
       </div>

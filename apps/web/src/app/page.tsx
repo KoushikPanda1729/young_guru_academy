@@ -5,6 +5,7 @@ import FaqSection from "@/components/faq";
 import FeatureSections from "@/components/features";
 import HeroSection from "@/components/hero";
 import TestimonalSection from "@/components/testimonal";
+import TrainerVideosSection from "@/components/trainer-videos";
 import { CtaSection } from "../components/cta";
 import DeepavaliOfferPopup from "../components/course-popup";
 import { siteConfig } from "@/config/seo";
@@ -36,6 +37,7 @@ export default function Home() {
       <FeatureSections />
       <CourseSection />
       <TestimonalSection />
+      <TrainerVideosSection />
       <AboutUsSection />
       <FaqSection />
       <CtaSection />

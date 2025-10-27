@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import PhoneWithCardOverlay from "./phone";
 import Image from "next/image";
+import { AppStoreDialog } from "./app-store-dialog";
 
 export default function HeroSection() {
   return (
@@ -36,7 +37,7 @@ export default function HeroSection() {
         {/* Store Buttons */}
         <div className="flex flex-col sm:flex-row items-start gap-4">
           <Link
-            href="https://play.google.com/store/apps/details?id=com.app.talk2partners"
+            href="https://play.google.com/store/apps/details?id=co.classplus.yga"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block"
@@ -50,12 +51,7 @@ export default function HeroSection() {
             />
           </Link>
 
-          <Link
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block"
-          >
+          <AppStoreDialog>
             <Image
               src="/badges/app-store-badge.svg"
               alt="Download on the App Store"
@@ -63,7 +59,7 @@ export default function HeroSection() {
               height={47}
               className="h-12 w-auto"
             />
-          </Link>
+          </AppStoreDialog>
         </div>
       </div>
 
