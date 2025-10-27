@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col md:flex-row items-center lg:justify-center justify-start gap-12 px-6 md:px-20 py-12 mt-20 lg:mt-6"
+      className="relative min-h-screen flex flex-col md:flex-row items-center lg:justify-center justify-start gap-12 px-6 md:px-20 py-12 mt-20 lg:mt-[50px]"
     >
       {/* Left Side - Text */}
       <div className="max-w-2xl text-left space-y-6">

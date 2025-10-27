@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
         hostname: "vz-89e3d251-e65.b-cdn.net",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "yt3.googleusercontent.com",
+        pathname: "/**",
+      },
     ],
   },
 };
