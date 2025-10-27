@@ -76,9 +76,9 @@ const defaultFaqs = [
 ];
 
 export default function FaqSection() {
-  const { faqs, loading, error, fetchFaqs } = useAction();
+  const { faqs, fetchFaqs } = useAction();
 
-  
+
   React.useEffect(() => {
     const abort = new AbortController();
     void fetchFaqs({ signal: abort.signal });
@@ -94,8 +94,6 @@ export default function FaqSection() {
       content: f.answer?.trim() || '',
     }));
   }, [faqs]);
-
-  const hasFaqs = accordionItems.length > 0;
 
   // Always show FAQs (default or from API), never show error or loading states
 

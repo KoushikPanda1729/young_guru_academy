@@ -74,14 +74,14 @@ export default function TrainerVideosSection() {
 
   // Initialize YouTube players
   useEffect(() => {
-    // @ts-ignore - YouTube API is loaded dynamically
+    // @ts-expect-error - YouTube API is loaded dynamically
     window.onYouTubeIframeAPIReady = () => {
       iframeRefs.current.forEach((iframe, index) => {
         if (iframe) {
-          // @ts-ignore - YouTube API
+          // @ts-expect-error - YouTube API
           new window.YT.Player(iframe, {
             events: {
-              onStateChange: (event: any) => {
+              onStateChange: (event: { data: number }) => {
                 // 1 = playing
                 if (event.data === 1) {
                   setIsVideoPlaying(true);
@@ -90,7 +90,7 @@ export default function TrainerVideosSection() {
                   iframeRefs.current.forEach((ref, refIndex) => {
                     if (ref && refIndex !== index) {
                       try {
-                        // @ts-ignore
+                        // @ts-expect-error - YouTube API
                         const player = window.YT?.get?.(ref.id);
                         if (player?.getPlayerState?.() === 1) {
                           player.pauseVideo();
@@ -107,7 +107,7 @@ export default function TrainerVideosSection() {
                     const anyPlaying = iframeRefs.current.some((ref) => {
                       if (!ref) return false;
                       try {
-                        // @ts-ignore
+                        // @ts-expect-error - YouTube API
                         const player = window.YT?.get?.(ref.id);
                         return player?.getPlayerState?.() === 1;
                       } catch {

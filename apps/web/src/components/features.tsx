@@ -4,11 +4,8 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
 import {
-  LogIn,
   Users,
-  Mic,
   ClipboardCheck,
-  MessageCircle,
   PlayCircle,
 } from "lucide-react";
 import { brico } from "./fonts";
@@ -183,6 +180,7 @@ export default function FeatureSections() {
                   exit={{ y: -100, opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                 >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={features[currentFeature].thumbnail}
                     alt={features[currentFeature].title}
