@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "Talk2Partners™",
+  name: "Young Guru Academy",
   description:
-    "Real time communication platform to improve English fluency and confidence.",
-  url: "https://talk2partners.com", // Replace with your actual domain
-  ogImage: "https://talk2partners.com/images/og-image.jpg", // Replace with your actual OG image
+    "Transform your skills with flexible online courses. Offering personal and group batches for students, professionals, and homemakers.",
+  url: "https://youngguruacademy.com",
+  ogImage: "https://youngguruacademy.com/images/og-image.jpg",
   links: {
-    twitter: "https://twitter.com/talk2partners", // Replace with actual Twitter
-    github: "https://github.com/talk2partners", // Replace with actual GitHub
+    twitter: "https://twitter.com/youngguruacademy",
+    github: "https://github.com/youngguruacademy",
   },
   keywords: [
-    "English learning",
-    "English fluency",
-    "communication platform",
-    "language learning",
-    "English practice",
-    "speaking practice",
-    "English conversation",
-    "improve English",
+    "online courses",
+    "skill development",
+    "online learning",
+    "education platform",
+    "group batch",
+    "personal batch",
+    "demo class",
+    "young guru academy",
   ],
 };
 
@@ -32,12 +32,12 @@ export const defaultMetadata: Metadata = {
   keywords: siteConfig.keywords,
   authors: [
     {
-      name: "Talk2Partners",
+      name: "Young Guru Academy",
       url: siteConfig.url,
     },
   ],
-  creator: "Talk2Partners",
-  publisher: "Talk2Partners",
+  creator: "Young Guru Academy",
+  publisher: "Young Guru Academy",
   formatDetection: {
     email: false,
     address: false,
@@ -64,7 +64,7 @@ export const defaultMetadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@talk2partners", // Replace with actual Twitter handle
+    creator: "@youngguruacademy",
   },
   icons: {
     icon: "/favicon.ico",

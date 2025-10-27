@@ -1,7 +1,7 @@
 {
-  "name": "Talk2Partners™",
-  "short_name": "Talk2Partners",
-  "description": "Real time communication platform to improve English fluency and confidence.",
+  "name": "Young Guru Academy",
+  "short_name": "YG Academy",
+  "description": "Transform your skills with flexible online courses. Offering personal and group batches for students, professionals, and homemakers.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

@@ -108,8 +108,8 @@ export default function FeatureSections() {
             transition={{ duration: 1, delay: 0.5 }}
             className="mt-4 text-muted-foreground text-lg"
           >
-            Talk2Partners&trade; guides you step by step to become a fluent
-            English speaker.
+            Young Guru Academy guides you step by step to become a fluent
+            English speaker with expert guidance and flexible learning options.
           </motion.p>
         </div>
 

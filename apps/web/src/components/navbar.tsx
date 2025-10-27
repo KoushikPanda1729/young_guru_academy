@@ -21,10 +21,10 @@ export default function Navbar() {
   const navLinks = useMemo(
     () => [
       { href: "#home", label: "Home" },
-      { href: "#testimonial", label: "Testimonial" },
-      { href: "#about", label: "About Us" },
       { href: "#courses", label: "Courses" },
-      { href: "#faq", label: "FAQ" },
+      { href: "#about", label: "About us" },
+      { href: "#contact", label: "Contact Us" },
+      { href: "#privacy", label: "Privacy policy & Terms of service" },
     ],
     []
   );
@@ -69,21 +69,21 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Diwali Discount Banner */}
+      {/* Demo Class Banner */}
       <Link
-        href="https://play.google.com/store/apps/details?id=com.app.talk2partners"
+        href="#demo"
         className="fixed top-0 left-0 w-full z-[20] bg-primary text-white py-2.5 px-4 shadow-lg hover:opacity-90 transition-opacity duration-200"
       >
         <div className="flex overflow-hidden w-full sm:w-auto justify-center">
           <span className="text-sm sm:text-base font-semibold whitespace-nowrap">
             {/* Mobile view */}
             <span className="sm:hidden text-center hover:underline decoration-2 underline-offset-2">
-              App launch Special: 99% OFF!
+              Book Your Free Demo Class Today!
             </span>
 
             {/* Large screen view */}
             <span className="hidden sm:inline hover:underline decoration-2 underline-offset-4">
-              App launch Special: Get upto 99% OFF on courses offered!
+              Transform Your Skills - Book Your Free Demo Class Today!
             </span>
           </span>
         </div>
@@ -133,7 +133,7 @@ export default function Navbar() {
                 >
                   <SheetHeader className="w-full items-center">
                     <SheetTitle className="text-2xl font-bold text-center">
-                      Talk<span className="text-primary">2</span>Partners
+                      Young Guru <span className="text-primary">Academy</span>
                     </SheetTitle>
                   </SheetHeader>
 

@@ -12,11 +12,11 @@ export default function AboutUsSection() {
   const aboutData = {
     title: "About Us",
     subtitle:
-      "Talk2Partners™ is the new-age learning platform Managed by Bunni Education Service Pvt. Ltd., created as a pivot brand from our successful journey with Young Guru Academy. For over a decade, Young Guru Academy has empowered more than 50,000 students through online courses in Spoken English, Interview Preparation, and Soft Skills Training.",
+      "Young Guru Academy is a premier online learning platform managed by Bunni Education Service Pvt. Ltd. For over a decade, we have empowered more than 50,000 students through comprehensive online courses in Spoken English, Interview Preparation, and Soft Skills Training. We offer flexible learning options with both Group and Personal batches to suit every learner's needs.",
     mission:
-      "Helping Hindi-medium learners speak English in real life situations by practicing with same-level partners and learning from expert guidance.",
+      "To provide accessible, high-quality skill development courses that empower students, professionals, and homemakers to achieve their personal and career goals through expert guidance and flexible learning options.",
     vision:
-      "Within the next 5 years, our vision is to empower at least 1 crore learners to master Spoken English and Soft Skills at an affordable fee with the help of technology",
+      "Within the next 5 years, our vision is to empower at least 1 crore learners to master essential skills including Spoken English and Soft Skills at an affordable fee with the help of technology and personalized teaching methods.",
   };
 
   const stats = [

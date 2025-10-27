@@ -34,7 +34,7 @@ const data = {
   },
 
   company: {
-    name: "Talk2Partners™",
+    name: "Young Guru Academy",
   },
 
   stores: {

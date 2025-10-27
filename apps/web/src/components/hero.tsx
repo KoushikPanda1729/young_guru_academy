@@ -13,25 +13,24 @@ export default function HeroSection() {
       {/* Left Side - Text */}
       <div className="max-w-2xl text-left space-y-6">
         <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-          <span>Practice English.</span>
+          <span>Transform Your Skills.</span>
           <br />
           <ContainerTextFlip
-            words={["Anytime", "Anywhere"]}
+            words={["Learn", "Grow", "Succeed"]}
             interval={3000}
             animationDuration={700}
             className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
             textClassName="text-primary"
           />
-          {" with Real Learners"}
+          {" with Expert Guidance"}
         </div>
 
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-          <strong>Talk2Partners&trade;</strong> is an online English learning
-          app for anyone who struggles to speak with confidence. It connects
-          learners with same-level partners for natural practice and also offers
-          recorded lessons, vocabulary, quizzes, and expert chat support.
-          Suitable for students, professionals, housewives, and leaders — learn
-          anytime, at your own pace
+          <strong>Young Guru Academy</strong> offers comprehensive online
+          courses designed for students, working professionals, and homemakers.
+          Choose from flexible Group Batches for collaborative learning or
+          Personal Batches for one-on-one attention. Start with a free demo
+          class and experience quality education at your own pace.
         </p>
 
         {/* Store Buttons */}
