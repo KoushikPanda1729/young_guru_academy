@@ -157,7 +157,7 @@ export default function TrainerVideosSection() {
           >
             How our{" "}
             <span className="bg-primary from-foreground via-rose-300 to-primary bg-clip-text text-transparent dark:bg-gradient-to-b">
-              trainers train
+              Trainers train
             </span>
           </motion.h2>
 

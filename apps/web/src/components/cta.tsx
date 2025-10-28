@@ -7,7 +7,7 @@ import { PlayCircle } from "lucide-react";
 import { AppStoreDialog } from "./app-store-dialog";
 
 export function CtaSection() {
-  const offerPrice = 9;
+  const offerPrice = 499;
   const mrpPrice = 600;
 
   const formatPrice = (price: number) =>
@@ -51,7 +51,7 @@ export function CtaSection() {
             href="https://play.google.com/store/apps/details?id=co.classplus.yga"
             className="inline-flex items-center gap-2 bg-white text-primary font-semibold px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition-transform"
           >
-            <PlayCircle className="w-5 h-5" /> Enroll Now – ₹9 🎉
+            <PlayCircle className="w-5 h-5" /> Enroll Now – ₹{offerPrice} 🎉
           </Link>
 
           {/* Store Buttons */}

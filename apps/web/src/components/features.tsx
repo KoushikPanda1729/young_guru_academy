@@ -7,6 +7,7 @@ import {
   Users,
   ClipboardCheck,
   PlayCircle,
+  MessageCircle,
 } from "lucide-react";
 import { brico } from "./fonts";
 
@@ -44,8 +45,17 @@ const features = [
     content:
       "Download lessons and practice without internet connection. Learn on the go, anytime.",
     icon: <ClipboardCheck className="h-6 w-6 text-primary" />,
-    thumbnail: "https://img.youtube.com/vi/Fixrdd0O6GI/maxresdefault.jpg",
+    thumbnail: "https://youngguruacademy.com/wp-content/uploads/2023/10/App-Banner-Design-1-2.jpg",
     videoUrl: "https://www.youtube.com/watch?v=Fixrdd0O6GI",
+  },
+  {
+    step: "Step 5",
+    title: "Live Chat Support",
+    content:
+      "Get instant help from our support team. Chat with experts in real-time to answer your questions.",
+    icon: <MessageCircle className="h-6 w-6 text-primary" />,
+    thumbnail: "/images/live_chat.png",
+    videoUrl: "#",
   },
 ];
 
@@ -184,7 +194,7 @@ export default function FeatureSections() {
                   <img
                     src={features[currentFeature].thumbnail}
                     alt={features[currentFeature].title}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </motion.a>
               </AnimatePresence>

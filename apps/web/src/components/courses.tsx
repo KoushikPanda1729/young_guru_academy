@@ -241,14 +241,14 @@ export default function CourseSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex justify-center"
             >
-              <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full max-w-[400px] h-[550px] flex flex-col">
+              <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full max-w-[400px] h-[700px] flex flex-col">
                 {/* Image */}
-                <div className="relative w-full h-44 flex-shrink-0">
+                <div className="relative w-full h-74 flex-shrink-0">
                   <Image
                     src={course.image}
                     alt={course.title}
                     fill
-                    className="rounded-t-xl object-cover"
+                    className="rounded-t-xl object-fill"
                   />
                   <Badge className="absolute top-2 left-2 bg-yellow-400 text-black rounded-full px-2 py-0.5 text-xs font-medium">
                     {course.duration}
@@ -257,10 +257,10 @@ export default function CourseSection() {
 
                 {/* Text Content */}
                 <CardHeader className="pb-2 pt-3 px-4 flex-shrink-0">
-                  <CardTitle className="text-blue-600 text-base leading-tight">
+                  <CardTitle className="text-blue-600 text-xl leading-tight">
                     {course.title}
                   </CardTitle>
-                  <CardDescription className="text-muted-foreground text-xs leading-tight">
+                  <CardDescription className="text-muted-foreground text-sm leading-tight">
                     {course.description}
                   </CardDescription>
                 </CardHeader>
@@ -269,14 +269,14 @@ export default function CourseSection() {
                 <div className="px-4 space-y-2 pb-3 flex-1">
                   {course.includes && (
                     <div>
-                      <h4 className="font-semibold text-xs mb-1">
+                      <h4 className="font-semibold text-sm mb-1">
                         Batch Includes
                       </h4>
                       <ul className="space-y-0">
                         {course.includes.map((item, i) => (
                           <li
                             key={i}
-                            className="text-[11px] text-muted-foreground flex items-start leading-tight"
+                            className="text-sm text-muted-foreground flex items-start leading-tight"
                           >
                             <span className="mr-1 text-primary">✓</span>
                             {item}
@@ -288,14 +288,14 @@ export default function CourseSection() {
 
                   {course.learningMaterial && (
                     <div>
-                      <h4 className="font-semibold text-xs mb-1">
+                      <h4 className="font-semibold text-sm mb-1">
                         Learning Material
                       </h4>
                       <ul className="space-y-0">
                         {course.learningMaterial.map((item, i) => (
                           <li
                             key={i}
-                            className="text-[11px] text-muted-foreground flex items-start leading-tight"
+                            className="text-sm text-muted-foreground flex items-start leading-tight"
                           >
                             <span className="mr-1">📚</span>
                             {item}
@@ -307,14 +307,14 @@ export default function CourseSection() {
 
                   {course.outcomes && (
                     <div>
-                      <h4 className="font-semibold text-xs mb-1">
+                      <h4 className="font-semibold text-sm mb-1">
                         After Completion
                       </h4>
                       <ul className="space-y-0">
                         {course.outcomes.map((item, i) => (
                           <li
                             key={i}
-                            className="text-[11px] text-muted-foreground flex items-start leading-tight"
+                            className="text-sm text-muted-foreground flex items-start leading-tight"
                           >
                             <span className="mr-1">🎯</span>
                             {item}
@@ -325,8 +325,8 @@ export default function CourseSection() {
                   )}
                 </div>
 
-                <CardFooter className="flex flex-col items-start gap-2 border-t pt-3 px-4 pb-3 flex-shrink-0">
-                  <div className="flex items-center justify-between w-full">
+                <CardFooter className="flex flex-col items-start gap-2  pt-3 px-6 mb-4 flex-shrink-0 mt-auto border border-white">
+                  <div className="flex items-center justify-between w-full gap-2">
                     <div className="flex items-center gap-2">
                       <span className="text-lg font-bold text-gray-900">
                         {course.price}
@@ -335,7 +335,10 @@ export default function CourseSection() {
                         {course.originalPrice}
                       </span>
                     </div>
-                    <Button asChild className="px-4 py-1 h-8 text-sm">
+                    <Button
+                      asChild
+                      className="px-3 sm:px-4 py-1 h-8 text-xs sm:text-sm flex-shrink-0 ml-2"
+                    >
                       <Link href={course.link}>Enroll Now</Link>
                     </Button>
                   </div>
